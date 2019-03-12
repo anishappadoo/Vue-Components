@@ -1,3 +1,3 @@
-Vue Components
+# Introduction
 
 This repository contains custom Vue components.
