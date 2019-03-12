@@ -1,2 +1,0 @@
-# Vue-Nuxt
-Vue/Nuxt
