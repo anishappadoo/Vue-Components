@@ -1,6 +1,6 @@
 ![](Button_Preview.gif)
 
-# List of Titles
+# List of Props
 ppText
 ppTextSize
 ppTextPadding
