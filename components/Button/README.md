@@ -17,4 +17,4 @@ ppButtonOutline\
 ppButtonTextAlign\
 ppButtonTransitionDuration\
 ppClickFunction\
-ppDisabled\
+ppDisabled
