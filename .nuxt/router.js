@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import { interopDefault } from './utils'
+import {
+  interopDefault
+} from './utils'
 
-const _7eeebc03 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
+const _03396135 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */ ))
 
 Vue.use(Router)
 
@@ -34,10 +36,16 @@ const scrollBehavior = function (to, from, savedPosition) {
     to.matched.every(r => r.components.default.options.scrollToTop !== false)
   ) {
     // scroll to the top of the page
-    position = { x: 0, y: 0 }
+    position = {
+      x: 0,
+      y: 0
+    }
   } else if (to.matched.some(r => r.components.default.options.scrollToTop)) {
     // if one of the children has scrollToTop option set to true
-    position = { x: 0, y: 0 }
+    position = {
+      x: 0,
+      y: 0
+    }
   }
 
   // savedPosition is only available for popstate navigations (back button)
@@ -59,7 +67,9 @@ const scrollBehavior = function (to, from, savedPosition) {
         try {
           if (document.querySelector(hash)) {
             // scroll to anchor by returning the selector
-            position = { selector: hash }
+            position = {
+              selector: hash
+            }
           }
         } catch (e) {
           console.warn('Failed to save scroll position. Please add CSS.escape() polyfill (https://github.com/mathiasbynens/CSS.escape).')
@@ -80,7 +90,7 @@ export function createRouter() {
 
     routes: [{
       path: "/",
-      component: _7eeebc03,
+      component: _03396135,
       name: "index"
     }],
 

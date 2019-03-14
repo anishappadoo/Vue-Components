@@ -1,16 +1,23 @@
 import Vue from 'vue'
 import Meta from 'vue-meta'
-import { createRouter } from './router.js'
+import {
+  createRouter
+} from './router.js'
 import NoSsr from './components/no-ssr.js'
 import NuxtChild from './components/nuxt-child.js'
 import NuxtError from './components/nuxt-error.vue'
 import Nuxt from './components/nuxt.js'
 import App from './App.js'
-import { setContext, getLocation, getRouteData, normalizeError } from './utils'
+import {
+  setContext,
+  getLocation,
+  getRouteData,
+  normalizeError
+} from './utils'
 
 /* Plugins */
 
-import nuxt_plugin_bootstrapvue_5cddc8fe from 'nuxt_plugin_bootstrapvue_5cddc8fe' // Source: ./bootstrap-vue.js (mode: 'all')
+import nuxt_plugin_bootstrapvue_693167e4 from 'nuxt_plugin_bootstrapvue_693167e4' // Source: ./bootstrap-vue.js (mode: 'all')
 
 // Component: <NoSsr>
 Vue.component(NoSsr.name, NoSsr)
@@ -32,7 +39,14 @@ Vue.use(Meta, {
   tagIDKeyName: 'hid' // the property name that vue-meta uses to determine whether to overwrite or append a tag
 })
 
-const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {
+  "name": "page",
+  "mode": "out-in",
+  "appear": false,
+  "appearClass": "appear",
+  "appearActiveClass": "appear-active",
+  "appearToClass": "appear-to"
+}
 
 async function createApp(ssrContext) {
   const router = await createRouter(ssrContext)
@@ -46,16 +60,18 @@ async function createApp(ssrContext) {
 
     nuxt: {
       defaultTransition,
-      transitions: [ defaultTransition ],
+      transitions: [defaultTransition],
       setTransitions(transitions) {
         if (!Array.isArray(transitions)) {
-          transitions = [ transitions ]
+          transitions = [transitions]
         }
         transitions = transitions.map((transition) => {
           if (!transition) {
             transition = defaultTransition
           } else if (typeof transition === 'string') {
-            transition = Object.assign({}, defaultTransition, { name: transition })
+            transition = Object.assign({}, defaultTransition, {
+              name: transition
+            })
           } else {
             transition = Object.assign({}, defaultTransition, transition)
           }
@@ -128,7 +144,7 @@ async function createApp(ssrContext) {
 
   // Plugin execution
 
-  if (typeof nuxt_plugin_bootstrapvue_5cddc8fe === 'function') await nuxt_plugin_bootstrapvue_5cddc8fe(app.context, inject)
+  if (typeof nuxt_plugin_bootstrapvue_693167e4 === 'function') await nuxt_plugin_bootstrapvue_693167e4(app.context, inject)
 
   // If server-side, wait for async component to be resolved first
   if (process.server && ssrContext && ssrContext.url) {
@@ -154,4 +170,7 @@ async function createApp(ssrContext) {
   }
 }
 
-export { createApp, NuxtError }
+export {
+  createApp,
+  NuxtError
+}
