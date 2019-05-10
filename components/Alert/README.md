@@ -1,3 +1,3 @@
-#<p align="center">
+`<p align="center">
   ![](Alert_Preview.gif)
-#</p>
+`</p>
