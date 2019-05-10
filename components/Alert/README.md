@@ -1,1 +1,3 @@
-![](Alert_Preview.gif)
+<p align="center">
+  ![](Alert_Preview.gif)
+</p>
