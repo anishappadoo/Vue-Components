@@ -1,4 +1,4 @@
-![](Alert_Preview.gif)
+![](Alert_Preview.gif?style=centerme)
 
 <style>
   img[src$="centerme"] {
