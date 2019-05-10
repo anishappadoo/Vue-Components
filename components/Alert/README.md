@@ -1,8 +1,3 @@
-![](Alert_Preview.gif?style=centerme)
-
-<style>
-  img[src$="centerme"] {
-    display:block;
-    margin: 0 auto;
-  }
-</style
+#<p align="center">
+  ![](Alert_Preview.gif)
+#</p>
