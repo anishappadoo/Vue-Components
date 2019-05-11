@@ -1,3 +1,3 @@
 # COMPONENTS
 
-**The components directory contains Vue.js Components.**
+**The components directory custom contains Vue.js Components.**
