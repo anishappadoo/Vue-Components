@@ -1,1 +1,3 @@
-#![](Toggle_Preview.gif)
+#<p style="align:center">
+  ![](Toggle_Preview.gif)
+</p>
